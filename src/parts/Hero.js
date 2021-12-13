@@ -3,7 +3,9 @@ import formatNumbering from "utils/formatNumbering";
 import Button from "element/Button";
 import ImageHero from "assets/images/img-hero.jpg";
 import ImageHeroFrame from "assets/images/img-hero-frame.jpg";
-import Icons from "assets/images/icons/star.svg";
+import IconTraveler from "assets/images/icons/icon-traveler.svg";
+import IconCities from "assets/images/icons/icon-cities.svg";
+import IconTreasure from "assets/images/icons/icon-treasure.svg";
 
 const Hero = (props) => {
 	const showMostPicked = () => {
@@ -38,7 +40,7 @@ const Hero = (props) => {
 							<img
 								width="36"
 								height="36"
-								src={Icons}
+								src={IconTraveler}
 								alt={`${props.data.travelers} Travelers`}
 							/>
 							<h6 className="mt-3">
@@ -52,7 +54,7 @@ const Hero = (props) => {
 							<img
 								width="36"
 								height="36"
-								src={Icons}
+								src={IconCities}
 								alt={`${props.data.cities} cities`}
 							/>
 							<h6 className="mt-3">
@@ -64,7 +66,7 @@ const Hero = (props) => {
 							<img
 								width="36"
 								height="36"
-								src={Icons}
+								src={IconTreasure}
 								alt={`${props.data.treasures} treasures`}
 							/>
 							<h6 className="mt-3">

@@ -8,11 +8,14 @@ const MostPicked = (props) => {
 			<div className="container-grid">
 				{props.data.map((item, index) => {
 					return (
-						<div className={`item column-4 ${index === 0 ? "row-2" : "row-1"}`}>
+						<div
+							key={`most-picked-${index}`}
+							className={`item column-4 ${index === 0 ? "row-2" : "row-1"}`}
+						>
 							<div className="card card-featured bordered">
 								<div className="tag">
 									${item.price}
-									<span className="font-weight-light"> per{item.unit}</span>
+									<span className="font-weight-light"> per {item.unit}</span>
 								</div>
 								<figure className="img-wrapper">
 									<img

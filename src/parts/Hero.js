@@ -8,7 +8,7 @@ import Icons from "assets/images/icons/star.svg";
 const Hero = (props) => {
 	const showMostPicked = () => {
 		window.scrollTo({
-			top: props.refMostPicked.current.offSetTop - 30,
+			top: props.refMostPicked.current.offsetTop - 30,
 			behavior: "smooth",
 		});
 	};

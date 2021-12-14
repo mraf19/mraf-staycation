@@ -12,7 +12,7 @@ const Footer = () => {
 						We Kaboom your beauty holiday instantly and Memorable
 					</p>
 				</div>
-				<div className="col-2 mr-5">
+				<div className="col-2 col-sm-2 mr-5">
 					<h6 className="mt-2">For Beginners</h6>
 					<ul className="list-group list-group-flush">
 						<li className="list-group-item">
@@ -32,7 +32,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="col-2 mr-5">
+				<div className="col-2 col-sm-2 mr-5">
 					<h6 className="mt-2">Explore Us</h6>
 					<ul className="list-group list-group-flush">
 						<li className="list-group-item">
@@ -52,7 +52,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div className="col-3">
+				<div className="col-3 col-sm-3">
 					<h6 className="mt-2">Contact Us</h6>
 					<ul className="list-group list-group-flush">
 						<li className="list-group-item">

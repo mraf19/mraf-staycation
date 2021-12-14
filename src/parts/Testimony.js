@@ -7,7 +7,7 @@ const Testimony = ({ data }) => {
 	return (
 		<section className="container">
 			<div className="row align-items-center">
-				<div className="col-auto" style={{ marginRight: 70 }}>
+				<div className="col-auto my-5" style={{ marginRight: 70 }}>
 					<div className="testimonial-hero" style={{ margin: `30px 0 0 30px` }}>
 						<img
 							src={data.imageUrl}
@@ -32,7 +32,7 @@ const Testimony = ({ data }) => {
 						height={35}
 						spacing={4}
 					/>
-					<h5 className="h2 font-weight-light line-spacing-2 my-3">
+					<h5 className="h2 font-weight-light line-spacing-2 mt-5 mb-3">
 						{data.content}
 					</h5>
 					<span className="text-gray-500">

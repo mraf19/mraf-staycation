@@ -5,7 +5,7 @@ import "./index.scss";
 const InputNumber = (props) => {
 	const { value, placeholder, name, min, max, prefix, suffix, isSuffixPlural } =
 		props;
-	const [inputValue, setInputValue] = useState(`${prefix}${value}${suffix}`);
+	const [inputValue, setInputValue] = useState(`${prefix}${value} ${suffix}`);
 
 	const onChange = (e) => {
 		console.log(inputValue);
@@ -24,7 +24,7 @@ const InputNumber = (props) => {
 				},
 			});
 			setInputValue(
-				`${prefix}${value}${suffix}${isSuffixPlural && value > 1 ? "s" : ""}`,
+				`${prefix}${value} ${suffix}${isSuffixPlural && value > 1 ? "s" : ""}`,
 			);
 			console.log(inputValue);
 		}
@@ -61,6 +61,7 @@ const InputNumber = (props) => {
 					</span>
 				</div>
 				<input
+					type="text"
 					name={name}
 					min={min}
 					max={max}

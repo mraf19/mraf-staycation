@@ -3,11 +3,11 @@ import InputNumber from "element/Form/InputNumber";
 
 class Example extends React.Component {
 	state = {
-		value: 10,
+		value: "",
 	};
 	handleChange = (e) => {
 		this.setState({
-			[e.target.name]: e.target.value,
+			value: e.target.value,
 		});
 	};
 	render() {
@@ -23,6 +23,7 @@ class Example extends React.Component {
 							name="value"
 							onChange={this.handleChange}
 							value={this.state.value}
+							suffix="night"
 							isSuffixPlural
 						/>
 					</div>

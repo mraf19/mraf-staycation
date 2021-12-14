@@ -1,9 +1,10 @@
+import React from "react";
 import Header from "parts/Header";
 import Hero from "parts/Hero";
 import MostPicked from "parts/MostPicked";
 import Categories from "parts/Categories";
 import Testimony from "parts/Testimony";
-import React from "react";
+import Footer from "parts/Footer"
 import landingpage from "json/landingPage.json";
 
 class LandingPage extends React.Component {
@@ -22,6 +23,7 @@ class LandingPage extends React.Component {
 				/>
 				<Categories data={landingpage.categories} />
 				<Testimony data={landingpage.testimonial} />
+				<Footer />
 			</>
 		);
 	}

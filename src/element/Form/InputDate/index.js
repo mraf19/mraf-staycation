@@ -1,5 +1,3 @@
-// install react-date-range dan date-fns
-
 import React, { useState, useEffect, useRef } from "react";
 import propTypes from "prop-types";
 
@@ -36,7 +34,7 @@ const InputDate = (props) => {
 
 	const refDate = useRef(null);
 	const handleClickOutside = (event) => {
-		if (refDate && refDate.current.contains(event.target)) {
+		if (refDate && !refDate.current.contains(event.target)) {
 			setIsShowed(false);
 		}
 	};
@@ -53,9 +51,9 @@ const InputDate = (props) => {
 			ref={refDate}
 			classname={["input-date mb-3", props.outerClassName].join(" ")}
 		>
-			<div class="input-group">
-				<div class="input-group-prepend bg-gray-900">
-					<span class="input-group-text">
+			<div className="input-group">
+				<div className="input-group-prepend bg-gray-900">
+					<span className="input-group-text">
 						<img src={iconCalendar} alt="calendar" />
 					</span>
 				</div>
@@ -68,13 +66,13 @@ const InputDate = (props) => {
 					onClick={() => setIsShowed(!isShowed)}
 				/>
 				{isShowed && (
-					<div class="date-range-wrapper">
+					<div className="date-range-wrapper">
 						<DateRange
 							editableDateInputs={true}
 							onChange={datePickerChange}
 							moveRangeOnFirstSelection={false}
 							onRangeFocusChange={check}
-							ranges={{ value }}
+							ranges={[value]}
 						/>
 					</div>
 				)}

@@ -6,7 +6,7 @@ const Categories = ({ data }) => {
 	return data.map((category, index1) => {
 		return (
 			<section className="container" key={`category-${index1}`}>
-				<Fade bottom delay={index1 * 300}>
+				<Fade bottom delay={300}>
 					<h4 className="mb-4 gont-weight-medium">{category.name}</h4>
 				</Fade>
 				<div className="container-grid">

@@ -5,7 +5,7 @@ import Button from "element/Button";
 const MostPicked = (props) => {
 	return (
 		<section className="container mt-5" ref={props.refMostPicked}>
-			<Fade bottom>
+			<Fade bottom delay={300}>
 				<h3 className="mb-3">Most Picked</h3>
 			</Fade>
 			<div className="container-grid">

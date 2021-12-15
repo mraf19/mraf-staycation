@@ -62,7 +62,8 @@ export default class BookingForm extends Component {
 	}
 	render() {
 		const { data } = this.state;
-		const { itemDetails, startBooking } = this.props;
+		const { itemDetails } = this.props;
+		// const { itemDetails, startBooking } = this.props;
 		return (
 			<div className="card bordered" style={{ padding: "60px 80px" }}>
 				<h4 className="mb-3">Start Booking</h4>
@@ -97,11 +98,13 @@ export default class BookingForm extends Component {
 					</span>
 				</h6>
 				<Button
+					type="link"
 					className="btn"
 					isPrimary
 					isBlock
 					hasShadow
-					onclick={startBooking}
+					// onclick={startBooking}
+					href="/checkout"
 				>
 					Continue to Book
 				</Button>

@@ -14,7 +14,7 @@ import BookingForm from "parts/BookingForm";
 
 export default class DetailPage extends Component {
 	componentDidMount() {
-		window.title = "Detail Page";
+		document.title = "Detail Page";
 		window.scrollTo(0, 0);
 	}
 

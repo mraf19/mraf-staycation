@@ -14,7 +14,7 @@ class LandingPage extends React.Component {
 	}
 
 	componentDidMount() {
-		window.title = "Staycation | Home";
+		document.title = "Staycation | Home";
 		window.scrollTo(0, 0);
 	}
 

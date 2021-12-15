@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer className="container">
 			<div className="row">
-				<div className="col-auto" style={{ width: 350 }}>
+				<div className="col-auto col-sm-12" style={{ width: 350 }}>
 					<TextIcon />
 					<p className="brand-tagline">
 						We Kaboom your beauty holiday instantly and Memorable

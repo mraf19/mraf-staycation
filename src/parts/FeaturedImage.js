@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 const FeaturedImage = ({ data }) => {
 	return (
@@ -12,11 +13,13 @@ const FeaturedImage = ({ data }) => {
 								index > 0 ? "row-1" : "row-2"
 							}`}
 						>
-							<div class="card h-100">
-								<figure class="img-wrapper">
-									<img src={item.url} alt={item._id} class="img-cover" />
-								</figure>
-							</div>
+							<Fade bottom delay={300 * index}>
+								<div class="card h-100">
+									<figure class="img-wrapper">
+										<img src={item.url} alt={item._id} class="img-cover" />
+									</figure>
+								</div>
+							</Fade>
 						</div>
 					);
 				})}

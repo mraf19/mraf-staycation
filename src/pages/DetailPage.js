@@ -4,6 +4,7 @@ import DetailPageTitle from "parts/DetailPageTitle";
 import FeaturedImage from "parts/FeaturedImage";
 import DetailPageDesc from "parts/DetailPageDesc";
 // import Categories from "parts/Categories";
+import Fade from "react-reveal/Fade";
 import Testimony from "parts/Testimony";
 import Footer from "parts/Footer";
 
@@ -29,11 +30,16 @@ export default class DetailPage extends Component {
 				<FeaturedImage data={ItemDetails.imageUrls} />
 				<section class="container">
 					<div class="row">
-						<div class="col-7 pr-5">
-							<DetailPageDesc data={ItemDetails} />
+						<div class="col-lg-7 col-sm-12 pr-5">
+							<Fade bottom>
+								<DetailPageDesc data={ItemDetails} />
+							</Fade>
 						</div>
-						<div class="col-5">
-							<BookingForm itemDetails={ItemDetails} />
+
+						<div class="col-lg-5 col-sm-12">
+							<Fade bottom delay={300}>
+								<BookingForm itemDetails={ItemDetails} />
+							</Fade>
 						</div>
 					</div>
 				</section>

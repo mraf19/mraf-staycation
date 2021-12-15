@@ -18,6 +18,7 @@ const Stepper = (props) => {
 
 	const nextStep = () => {
 		if (+indexStep < totalStep) setCurrentStep(stepKeys[indexStep + 1]);
+		console.log(CurrentStep);
 	};
 	return <>{props.children(prevStep, nextStep, CurrentStep, steps)}</>;
 };

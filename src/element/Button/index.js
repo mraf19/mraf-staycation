@@ -10,10 +10,6 @@ const Button = (props) => {
 	if (props.hasShadow) className.push("btn-shadow");
 	if (props.isBlock) className.push("btn-block");
 
-	const onClick = () => {
-		if (props.onClick) onClick();
-	};
-
 	if (props.isDisabled || props.isLoading) {
 		if (props.isDisabled) className.push("disabled");
 		return (
@@ -49,7 +45,7 @@ const Button = (props) => {
 					to={props.href}
 					className={className.join(" ")}
 					style={props.style}
-					onClick={onClick}
+					onClick={props.onClick}
 				>
 					{props.children}
 				</Link>
@@ -60,7 +56,7 @@ const Button = (props) => {
 		<button
 			className={className.join(" ")}
 			style={props.style}
-			onClick={onClick}
+			onClick={props.onClick}
 		>
 			{props.children}
 		</button>

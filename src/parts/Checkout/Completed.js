@@ -7,7 +7,7 @@ const Completed = () => {
 		<Fade>
 			<div className="container" style={{ marginBottom: "30px" }}>
 				<div className="row justify-content-center align-items-center text-center">
-					<div className="col-4">
+					<div className="col--lg-4 col-sm-6">
 						<img
 							src={CompletedIlustration}
 							alt="Completed"

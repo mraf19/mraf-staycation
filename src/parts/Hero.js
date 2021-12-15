@@ -36,7 +36,7 @@ const Hero = (props) => {
 							className="btn px-5"
 							isPrimary
 							hasShadow
-							onclick={showMostPicked}
+							onClick={showMostPicked}
 						>
 							Show Me Now
 						</Button>

@@ -9,7 +9,7 @@ const BookingInformation = (props) => {
 			<div className="container" style={{ marginBottom: "30px" }}>
 				<div className="row justify-coontent-center align-items-center">
 					<div
-						className="col-5 border-right py-5"
+						className="col-lg-5 col-sm-6 border-right py-5"
 						style={{ paddingRight: "80px" }}
 					>
 						<Fade delay={300}>
@@ -22,15 +22,15 @@ const BookingInformation = (props) => {
 									/>
 								</figure>
 								<div className="row align-items-center">
-									<div className="col">
-										<div className="meta-wrappe">
+									<div className="col-lg col-sm">
+										<div className="meta-wrapper">
 											<h5>{itemDetails.name}</h5>
 											<span className="text-gray-599">
 												{itemDetails.city}, {itemDetails.country}
 											</span>
 										</div>
 									</div>
-									<div className="col-auto">
+									<div className="col-lg-auto col-sm-auto">
 										<span>${checkout.duration * itemDetails.price} USD</span>
 										<span className="text-gray-500"> per </span>
 										{checkout.duration} {itemDetails.unit}
@@ -40,7 +40,10 @@ const BookingInformation = (props) => {
 							</div>
 						</Fade>
 					</div>
-					<div className="col-5 py-5" style={{ paddingLeft: "80px" }}>
+					<div
+						className="col-lg-5 col-sm-6 py-5"
+						style={{ paddingLeft: "80px" }}
+					>
 						<Fade delay={600}>
 							<label htmlFor="firstName">First Name</label>
 							<InputText

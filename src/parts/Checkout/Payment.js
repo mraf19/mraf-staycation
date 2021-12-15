@@ -16,7 +16,7 @@ const Payment = (props) => {
 			<div className="container" style={{ marginBottom: "30px" }}>
 				<div className="row justify-content-center align-items-center">
 					<div
-						className="col-5 border-right py-5"
+						className="col-lg-5 col-sm-6 border-right py-5"
 						style={{ paddingRight: "80px" }}
 					>
 						<Fade delay={300}>
@@ -25,10 +25,10 @@ const Payment = (props) => {
 							<p>Sub Total: {subTotal} USD</p>
 							<p>Total: {grandTotal} USD</p>
 							<div className="row-mt-4">
-								<div className="col-3 text-right">
+								<div className="col-lg-3 col-sm-3 text-right">
 									<img width="60" src={logoBca} alt="BCA" />
 								</div>
-								<div className="col">
+								<div className="col-lg col-sm">
 									<dl>
 										<dd>Bank Central Asia</dd>
 										<dd>2208 1996</dd>
@@ -37,10 +37,10 @@ const Payment = (props) => {
 								</div>
 							</div>
 							<div className="row-mt-4">
-								<div className="col-3 text-right">
+								<div className="col-lg-3 col-sm-3 text-right">
 									<img width="60" src={logoMandiri} alt="Mandiri" />
 								</div>
-								<div className="col">
+								<div className="col-lg col-sm">
 									<dl>
 										<dd>Bank Mandiri</dd>
 										<dd>2208 1996</dd>
@@ -50,7 +50,10 @@ const Payment = (props) => {
 							</div>
 						</Fade>
 					</div>
-					<div className="col-5 py-5" style={{ paddingLeft: "80px" }}>
+					<div
+						className="col-lg-5 col-sm-6 py-5"
+						style={{ paddingLeft: "80px" }}
+					>
 						<Fade delay={600}>
 							<label htmlFor="proofPayment">Upload Bukti Pembayaran</label>
 							<InputFile

@@ -38,7 +38,7 @@ export default class CheckoutPage extends Component {
 	};
 
 	componentDidMount() {
-		window.scroll(0, 0);
+		window.scrollTo(0, 0);
 		document.title = "Staycation | Checkout";
 	}
 	render() {
@@ -105,7 +105,7 @@ export default class CheckoutPage extends Component {
 													isPrimary
 													isBlock
 													hasShadow
-													onclick={nextStep}
+													onClick={nextStep}
 												>
 													Continue to Book
 												</Button>
@@ -134,7 +134,7 @@ export default class CheckoutPage extends Component {
 													isPrimary
 													isBlock
 													hasShadow
-													onclick={nextStep}
+													onClick={nextStep}
 												>
 													Continue to Book
 												</Button>
@@ -145,7 +145,7 @@ export default class CheckoutPage extends Component {
 										type="button"
 										isLight
 										isBlock
-										onclick={prevStep}
+										onClick={prevStep}
 									>
 										Cancel
 									</Button>
